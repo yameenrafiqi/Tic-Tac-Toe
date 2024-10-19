@@ -42,8 +42,6 @@ boxes.forEach((box) => {
         count++;
 
         const isWinner = checkWinner();
-
-        // Check if it's a draw (only if there's no winner)
         if (!isWinner && count === 9) {
             showDraw();
         }
